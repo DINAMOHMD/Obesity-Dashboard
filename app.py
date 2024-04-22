@@ -6,7 +6,7 @@ import plotly.express as px
 
 # Dash app
 app = Dash(__name__, pages_folder='pages', use_pages=True, external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP])
-
+server = app.server
 # styling the sidebar
 SIDEBAR_STYLE = {
     "position": "fixed",
