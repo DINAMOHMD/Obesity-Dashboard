@@ -15,7 +15,7 @@ import joblib  # Import joblib to load the trained model
 
 dash.register_page(__name__, path='/model', name='Model')
 
-pipeline_loaded = joblib.load(r'pages\model_pipeline.joblib')
+pipeline_loaded = joblib.load(r'pages/model_pipeline.joblib')
 
 
 
