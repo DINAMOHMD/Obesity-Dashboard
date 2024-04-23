@@ -9,8 +9,8 @@ import plotly.express as px
 dash.register_page(__name__, path='/features', Name='Features')
 
 # Load your datasets
-train_sample = pd.read_csv(r'D:\Projects ITI\DV\Obesity\data\train.csv')
-train_orgin_extra = pd.read_csv(r'D:\Projects ITI\DV\Obesity\data\ObesityDataSet.csv')
+train_sample = pd.read_csv(r'data\train.csv')
+train_orgin_extra = pd.read_csv(r'data\ObesityDataSet.csv')
 train = pd.concat([train_sample, train_orgin_extra], ignore_index=True)
 
 # Get categorical columns
