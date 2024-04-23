@@ -11,7 +11,7 @@ import plotly.figure_factory as ff
 dash.register_page(__name__, path='/', name='Analysis')
 
 # Read Data 
-df = pd.read_csv(r'data\train.csv')
+df = pd.read_csv(r'data/train.csv')
 
 # Preprocessing for columns
 df['Age'] = df['Age'].astype(int)
